@@ -38,6 +38,25 @@ X_TD_DebugLog(" init() IN");
 }
 
 
+// Added from anken_other
+function addHoge_other(){
+
+}
+
+function hogehoge()
+{
+	addHoge_other();
+	addHoge();
+}
+
+// Added from anken
+function addHoge(){
+
+}
+
+
+
+
 function onload()
 {
 }
