@@ -37,6 +37,11 @@ X_pana_dbgPrint( " init() IN" );
 X_TD_DebugLog(" init() IN");
 }
 
+function hogehoge()
+{
+}
+
+
 
 function onload()
 {
