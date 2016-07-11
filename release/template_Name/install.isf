@@ -12,7 +12,7 @@ none,none
 
 ;テンプレート名,テンプレートバージョン
 #template, version
-templet_Name, 00.00.00
+template_Name, 00.00.00
 
 ;リソース名,処理スクリプト名,制作素材データ格納装置名,外部システム名/制作素材データ名
 #resource, script, server name, external system/data
