@@ -39,8 +39,13 @@ X_TD_DebugLog(" init() IN");
 
 function hogehoge()
 {
+	addHoge();
 }
 
+// Added from anken
+function addHoge(){
+
+}
 
 
 function onload()
