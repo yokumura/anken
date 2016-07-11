@@ -52,6 +52,7 @@ function hogehoge()
 // Added from anken
 function addHoge(){
 
+	return;	// sub ╓гди╡ц
 }
 
 
