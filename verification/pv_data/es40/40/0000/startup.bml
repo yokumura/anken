@@ -52,6 +52,8 @@ function hogehoge()
 // Added from anken
 function addHoge(){
 
+//	return;	// sub で追加
+	return true;	// subsub で追加
 }
 
 
