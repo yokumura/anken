@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="EUC-JP"?>
+<!DOCTYPE bcml PUBLIC "-//ARIB//DTD BCML 1.0//JA" "http://www.arib.or.jp/B35/DTD/bcml_1_0.dtd">
+
+<bcml version="1.0">
+	<data_es 
+		name="es40"
+		component_tag="40"
+		entry_point_flag="TRUE"
+		auto_start_flag="TRUE"
+		independent_flag="TRUE"
+		style_for_tv_flag="TRUE"
+		document_resolution="960x540_16v9"
+		format_type="BML"
+		format_version="3.0"
+		ondemand_retrieval_flag="TRUE"
+		file_storable_flag="FALSE"
+		duration="01:00:00"
+		max_carousel_period="00:00:00">
+		<carousel
+			name="40"
+			start_time="00:00:00"
+			return_to_entry_flag="FALSE"
+			data_event_changed_flag="TRUE">
+			<module  name="0000" module_id="0000" version_up_flag="TRUE" priority="15" compress="NEVER">
+				<resource name="sample.clt" type="application/X-arib-bmlclut"/>
+				<resource name="startup.bml" type="text/X-arib-bml;charset=&quot;euc-jp&quot;"/>
+			</module>
+			<module  name="0001" module_id="0001" version_up_flag="TRUE" priority="15" compress="NEVER">
+			        <resource name="menu_btn7_n.png" type="image/X-arib-png">
+			          <editable ex_info="auto/imported" name="menu_btn7_n.png" type="image/X-arib-png"/>
+			        </resource>
+			</module>
+		</carousel>
+	</data_es>
+</bcml>

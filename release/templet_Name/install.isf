@@ -1,0 +1,19 @@
+;放送種別（1:データ放送、2:通信）
+#broadcast_type
+1
+
+;前処理スクリプト名,後処理スクリプト名
+#before_script, after_script
+none,none
+
+;テンプレート数
+#template_number
+1
+
+;テンプレート名,テンプレートバージョン
+#template, version
+templet_Name, 00.00.00
+
+;リソース名,処理スクリプト名,制作素材データ格納装置名,外部システム名/制作素材データ名
+#resource, script, server name, external system/data
+40/0001/menu_btn7_n.png,default,,ex_system/menu_btn7_n.png
