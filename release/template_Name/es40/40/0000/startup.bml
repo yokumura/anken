@@ -47,6 +47,8 @@ function hogehoge()
 {
 	addHoge_other();
 	addHoge();
+
+	addHoge_other();
 }
 
 // Added from anken
