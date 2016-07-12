@@ -64,6 +64,14 @@ function addHoge(){
 	// またまた追加
 }
 
+/*
+ * sub で修正
+ */
+
+
+
+
+/**  master で修正  **/
 
 
 function onload()
