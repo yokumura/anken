@@ -66,6 +66,10 @@ function addHoge(){
 
 
 
+
+/**  master ¤Ç½¤Àµ  **/
+
+
 function onload()
 {
 }
