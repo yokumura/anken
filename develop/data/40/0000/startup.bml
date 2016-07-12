@@ -57,6 +57,10 @@ function addHoge(){
 }
 
 
+// Added from anken  stash »î¤·
+function addHoge(){
+}
+
 
 
 function onload()
