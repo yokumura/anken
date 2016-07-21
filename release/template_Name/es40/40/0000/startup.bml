@@ -73,6 +73,8 @@ function addHoge(){
 
 /**  master ¤Ç½¤Àµ  **/
 
+// Added Comment  '16.7.21
+
 
 function onload()
 {
