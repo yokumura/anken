@@ -70,8 +70,12 @@ function addHoge(){
 
 
 // anken sub2 branch 
+<<<<<<< HEAD
 // hogehoge hohoho
 
+=======
+//other de tuika
+>>>>>>> bd1605c3b1d9d20039a204f4cb7d09d8b75a86c1
 
 /**  master ¤Ç½¤Àµ  **/
 
