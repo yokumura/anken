@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="EUC-JP"?>
+<!DOCTYPE bml PUBLIC "+//ARIB STD-B24:1999//DTD BML Document//JA" "http://www.arib.or.jp/B24/DTD/bml_1_1.dtd">
+<?bml bml-version="3.0"?>
+<!--
+
+-->
+<bml>
+<head>
+<title>startup for sub2</title>
+<style>
+<![CDATA[
+body
+{
+	background-color-index:160;
+	resolution:960x540;
+	display-aspect-ratio:16v9;
+	used-key-list:basic data-button;
+}
+]]>
+
+
+</style>
+
+<script>
+<![CDATA[
+
+function CDE_gid(id){return document.getElementById(id);}
+function CDE_gst(id){return CDE_gid(id).normalStyle;}
+function CDE_vis(id){CDE_gst(id).visibility="visible";}
+function CDE_hid(id){CDE_gst(id).visibility="hidden";}
+function CDE_isv(id){return (CDE_gst(id).visibility=="visible");}
+function CDE_prt(id,txt){CDE_gid(id).firstChild.data=txt;}
+function CDE_img(id,img){CDE_gid(id).data=img;}
+
+function init(){
+X_pana_dbgPrint( " init() IN" );
+X_TD_DebugLog(" init() IN");
+}
+
+
+// Added from anken_other
+function addHoge_other(){
+
+}
+
+function hogehoge()
+{
+	addHoge_other();
+	addHoge();
+
+	addHoge_other();
+}
+
+// Added from anken
+function addHoge(){
+
+//	return;	// sub で追加
+	return true;	// subsub で追加
+}
+
+
+// Added from anken  stash 試し
+function addHoge(){
+	// またまた追加
+}
+
+/*
+ * sub で修正
+ */
+
+
+
+
+/**  master で修正  **/
+
+// Added Comment  '16.7.21
+
+
+function onload()
+{
+}
+
+function onunload()
+{
+}
+
+//キーダウンハンドラ
+function LFEkeydown(){
+}
+
+// ■デバッグ出力
+//
+var XTDgDEBUG_LOGs = 0;
+function X_TD_DebugLog( str )
+{
+	var max=5;
+	browser.lockScreen();
+	if(XTDgDEBUG_LOGs <= max){
+		CDE_prt( "debug"+XTDgDEBUG_LOGs , str );
+		XTDgDEBUG_LOGs++;
+	}
+	else{
+		var i;
+		for(i=0;i<max;i++){ CDE_prt( "debug"+i,document.getElementById("debug"+(i+1)).firstChild.data); }
+		CDE_prt( "debug"+max,str);
+	}
+}
+
+
+]]>
+</script>
+</head>
+
+<body onload="onload();" onunload="onunload();">
+
+<!--  HD -->
+<div style="left:0px; top:0px; width:960px; height:540px;nav-index:0" onkeydown="LFEkeydown();">
+
+
+		<!-- ■デバッグ -->
+		<div id="debugbox1" style="left:56px;top:140px;width:742px;height:145px;visibility:visible;">
+			<p id="debug0"  class="dbg1" style="left:0px;top: 0px;width:740px;height:24px;"><![CDATA[　]]></p>
+			<p id="debug1"  class="dbg1" style="left:0px;top:24px;width:740px;height:24px;"><![CDATA[　]]></p>
+			<p id="debug2"  class="dbg1" style="left:0px;top:48px;width:740px;height:24px;"><![CDATA[　]]></p>
+			<p id="debug3"  class="dbg1" style="left:0px;top:72px;width:740px;height:24px;"><![CDATA[　]]></p>
+			<p id="debug4"  class="dbg1" style="left:0px;top:96px;width:740px;height:24px;"><![CDATA[　]]></p>
+			<p id="debug5"  class="dbg1" style="left:0px;top:120px;width:740px;height:24px;"><![CDATA[　]]></p>
+		</div>
+</div>
+</body>
+</bml>
